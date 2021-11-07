@@ -12,8 +12,8 @@ const confirm = () => {
     // console.log("p:", pickup);
     // console.log("d:", dropoff);
 
-    const [ pickupCoordinates, setPickupCoordinates ] = useState()
-    const [ dropoffCoordinates, setDropoffCoordinates ] = useState()
+    const [ pickupCoordinates, setPickupCoordinates ] = useState([0,0])
+    const [ dropoffCoordinates, setDropoffCoordinates ] = useState([0,0])
 
     const getPickupCoordinates = (pickup) => {
         // const pickup = "Soacha";
@@ -69,7 +69,10 @@ const confirm = () => {
 
             {/* Ride Container */}
             <RideContainer>
-                <RideSelector />
+                <RideSelector 
+                    pickupCoordinates={pickupCoordinates}
+                    dropoffCoordinates={dropoffCoordinates}
+                />
                 <ConfirmButtonContainer>
                         <ConfirmButton>
                             Confirm UberX
