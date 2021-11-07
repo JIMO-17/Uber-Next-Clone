@@ -14,7 +14,7 @@ const Search = () => {
         <Wrapper>
             {/* Button Container */}
             <ButtonContainer>
-                <Link href="/">
+                <Link href="/" passhref={true}>
                     <BackButton src="https://img.icons8.com/ios-filled/50/000000/left.png" />
                 </Link>
             </ButtonContainer>

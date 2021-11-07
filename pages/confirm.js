@@ -56,7 +56,7 @@ const Confirm = () => {
         <Wrapper>
             {/* Back Button */}
             <ButtonContainer>
-                <Link href="/search">
+                <Link href="/search" passhref={true}>
                     <BackButton src="https://img.icons8.com/ios-filled/50/000000/left.png" />
                 </Link>
             </ButtonContainer>

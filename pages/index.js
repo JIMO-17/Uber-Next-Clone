@@ -47,7 +47,7 @@ export default function Home() {
 
         {/* ActionButtons */}
         <ActionButtons>
-          <Link href="/search">
+          <Link href="/search" passhref={true}>
             <ActionButton>
               <ActionButtonImage src="https://i.ibb.co/cyvcpfF/uberx.png"/>
               Ride
