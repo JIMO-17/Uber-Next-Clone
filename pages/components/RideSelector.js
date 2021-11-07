@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import tw from "tailwind-styled-components"
-import {carList} from "../data/carList"
+import {CarList} from "../data/carList"
 
 const RideSelector = ({pickupCoordinates, dropoffCoordinates}) => {
 
@@ -23,7 +23,7 @@ const RideSelector = ({pickupCoordinates, dropoffCoordinates}) => {
         <Wrapper>
             <Title>Choose a ride, or swipe up for more</Title>
             <CarList>
-                { carList.map((car, index) => (
+                { CarList.map((car, index) => (
                     <Car key={index}>
                         <CarImage src={car.imgUrl} />
                         <CarDetails>
